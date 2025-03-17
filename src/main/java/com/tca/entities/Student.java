@@ -1,9 +1,24 @@
 package com.tca.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="student")
 public class Student {
 	
+	
+	@Id
+	@Column(name="rno")
 	private Integer rno;
+	
+	@Column(name="name")
 	private String name;
+	
+	@Column(name="per")
 	private Double per;
 	
 	

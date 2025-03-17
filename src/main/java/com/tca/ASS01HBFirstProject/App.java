@@ -46,6 +46,10 @@ public class App {
             transaction.commit();
             System.out.println("Data Saved Successfully");
        	
+            Student ob = (Student) session.get(Student.class,101);
+            
+            System.out.println(ob.getName());
+            System.out.println(ob.getPer());
         }
         
         
